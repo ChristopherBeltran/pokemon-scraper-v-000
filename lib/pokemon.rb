@@ -8,6 +8,8 @@ def initialize(id:, name:, type:, db:)
   @db = db
 end 
 
-def self.save
+def self.save(id, name, type, db)
+  
+end 
 
 end
