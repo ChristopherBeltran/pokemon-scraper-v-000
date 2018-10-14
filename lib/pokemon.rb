@@ -8,6 +8,6 @@ def initialize(id:, name:, type:, db:)
   @db = db
 end 
 
-
+def self.save
 
 end
