@@ -1,5 +1,6 @@
 class Pokemon
   
-def initialize()  
+def initialize
+end 
 
 end
