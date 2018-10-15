@@ -14,7 +14,11 @@ end
 
 def self.find(id, db)
   poke = db.execute("SELECT * FROM pokemon WHERE pokemon.id = #{id}")
-  other = Pokemon.new(poke)
+  other = Pokemon.new
+  other.id = poke[0]
+  other.name = poke[1]
+  other.type = poke[2]
+  other.db = db
   return other
 end 
 
