@@ -14,11 +14,7 @@ end
 
 def self.find(id, db)
   poke = db.execute("SELECT * FROM pokemon WHERE pokemon.id = #{id}")
-  other = Pokemon.new
-  other.id = poke[0]
-  other.name = poke[1]
-  other.type = poke[2]
-  other.db = db
+  other = Pokemon.new(id: poke[0], name: poke[1], type: poke[2], db: db)
   return other
 end 
 
